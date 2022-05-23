@@ -84,14 +84,19 @@ ul {
 	padding: 0;
 }
 
-h2{
-	color: #007bff;
+@media only screen and (max-width: 576px){
+	#landing {
+		height: 90vh;
+	}
+	#gallery { 
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
 }
 
-
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 389px){
 	#landing {
 		height: 110vh;
 	}
 }
-
