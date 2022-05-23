@@ -9,7 +9,10 @@ h1, h2 {
 	font-family: "Montserrat", sans-serif;
 }
 #_navbar{
-	opacity: 0.9;
+	opacity: 0.5;
+}
+.container-fluid {
+	margin-top: 60px;
 }
 
 .nav-item::after {
@@ -66,13 +69,15 @@ h1, h2 {
 }
 
 #gallery {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 95vh;
 	border-radius: 12px;
-	opacity: 0.9;
+	opacity: 0.8;
+}
+
+#footer{
+	position: absolute;
+	background-color: transparent;
+	justify-content: center;
+	width: 100%;
 }
 ul {
 	list-style: none;
@@ -83,12 +88,10 @@ h2{
 	color: #007bff;
 }
 
-.tools {
-	border: 5px solid #f2f2f2; 
-	margin: 20px;
-	padding: 25px;
-	height: 500px;
-	width: 60%;
-	color: white;
+
+@media only screen and (max-width: 576px){
+	#landing {
+		height: 110vh;
+	}
 }
 

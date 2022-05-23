@@ -40,7 +40,7 @@
 	<!-- create a wrapper/container for our layout -->
 	<div class="container-fluid">
 		<!-- landing section -->
-		<section class="jumbotron text-center mt-3" id="landing">
+		<section id="landing" class="jumbotron text-center">
 			<!-- 	h1: header 1 (can also go to h6) -->
 			<h1>Crisjun Lamoste - Full Stack Web Developer</h1>
 			<!-- p: paragraph -->
@@ -50,34 +50,52 @@
 			<img class="img-fluid" id="profile" src="images/me.png">
 		</section>
 		<!-- gallery section -->
-		<section id="gallery" class="text-center bg-danger mb-4">
-			<div class="tools">
-				<h2>Languages I Speak</h2>
-				<!-- ul: unordered list -->
-				<ul>
-					<!-- li: list item -->
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JAVASCRIPT</li>
-					<li>VB.NET</li>
-					<li>C#.NET</li>
-					<li>ASP.NET</li>
-					<li>ASP.NET MVC</li>
-					<li>ASP.NET CORE</li>
-				</ul>
-			</div>
-			<div class="tools">
-				<h2>Dev Tools</h2>
-				<ul>
-					<li>Terminal/Git Bash</li>
-					<li>Sublime Text</li>
-					<li>GitHub</li>
-					<li>Visual Studio Code</li>
-					<li>Microsoft Visual Studio</li>
-				</ul>
-			</div>
+		<section id="gallery" class="text-center bg-danger p-4 mb-4">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<div class="card">
+						<div class="card-header bg-dark">
+							<h2>Languages I Speak</h2>
+						</div>				
+						<!-- ul: unordered list -->
+						<ul>
+							<!-- li: list item -->
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JAVASCRIPT</li>
+							<li>VB.NET</li>
+							<li>C#.NET</li>
+							<li>ASP.NET</li>
+							<li>ASP.NET MVC</li>
+							<li>ASP.NET CORE</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-8 mt-4 mx-auto">
+					<div class="card">
+						<div class="card-header bg-dark">
+							<h2>Dev Tools</h2>
+						</div>			
+						<ul>
+							<li>Terminal/Git Bash</li>
+							<li>Sublime Text</li>
+							<li>GitHub</li>
+							<li>Visual Studio Code</li>
+							<li>Microsoft Visual Studio</li>
+						</ul>
+					</div>	
+				</div>
+			</div>				
 		</section>
 	</div>
+	<!-- Footer -->
+	<footer id="footer" class="text-center text-lg-start bg-dark text-white">
+        <p class="copyright mt-3">
+            &copy; Copyright
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            <br> Crisjun Lamoste - Full Stack Web Developer
+        </p>
+    </footer>
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
