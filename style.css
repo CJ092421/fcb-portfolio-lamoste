@@ -9,7 +9,7 @@ h1, h2 {
 	font-family: "Montserrat", sans-serif;
 }
 #_navbar{
-	opacity: 0.5;
+	opacity: 0.8;
 }
 .container-fluid {
 	margin-top: 60px;
@@ -69,8 +69,8 @@ h1, h2 {
 }
 
 #gallery {
-	border-radius: 4px;
-	opacity: 0.7;
+	border-radius: 50px 0 50px 0;
+	opacity: 0.8;
 }
 
 #footer{
