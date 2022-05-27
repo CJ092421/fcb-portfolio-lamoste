@@ -11,93 +11,380 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-	<!-- Personal CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- Personal CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">	
 </head>
 <body>
-	<!-- Comment Here 
-		- Ctrl + /
-		- Allows yout to write anything that will not be read by the browser (labels, notes, explanations)
-	-->
-	<!-- Navbar -->
-	<nav id="_navbar" class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mx-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#landing">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#gallery">Gallery</a>
-	      </li>
-	    </ul>
-	  </div>
+	<!-- Navbar Start -->
+	<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light">
+		<a href="#landing" class="navbar-brand ml-lg-3">
+			<h4 class="m-0 display-5"><span class="text-info"><i>C.</i></span><span class="text-secondary">JFolio</span></h4>
+		</a>
+		<button id="toggleButton" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span> </span>
+			<span> </span>
+			<span> </span>
+	    </button>	   
+		<div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+			 <hr/>
+			 <div class="navbar-nav py-0">
+                <a href="#landing" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skills" class="nav-item nav-link">Skill</a>
+                <a href="#qualification" class="nav-item nav-link">Qualification</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-menu d-none d-lg-block" id="btndownloadcv">Download CV</a>
+		</div>
 	</nav>
-	<!-- Div: Generic tags -->
-	<!-- create a wrapper/container for our layout -->
-	<div class="container-fluid">
-		<!-- landing section -->
-		<section id="landing" class="jumbotron text-center">
-			<!-- 	h1: header 1 (can also go to h6) -->
-			<h1>Crisjun Lamoste - Full Stack Web Developer</h1>
-			<!-- p: paragraph -->
-			<!-- <p>Hi! My name in Crisjun Lamoste and i love developing a website and also exploring multiple programming language.</p> -->
-			<p>Hi! My name in Crisjun Lamoste and i love developing a website and also exploring multiple programming language.</p>
-			<!-- img: imge; src: source -->
-			<img class="img-fluid" id="profile" src="images/me.png">
+	<div class="wrapper">
+		<!-- Landing Start -->
+		<section class="container-fluid bg-secondary d-flex align-item-center mb-5 py-5" id="landing">
+			<div class="container">
+	            <div class="row jumbotron align-items-center">
+	                <div class="col-lg-8 text-center text-lg-left">
+	                    <h3 class="text-white font-weight-normal mb-2">Hello, my name</h3>
+	                    <h1 class="text-uppercase text-warning mb-2">Crisjun Lamoste<br>Web Designer & Desktop Application Developer</h1>
+	                    <div class="typed-text text-light">I love developing a website and also exploring multiple programming language.</div>
+	                    <div class="d-flex pt-2 btn-contact">
+	                        <a href="#contact" class="btn btn-outline-light border-light">Contact Me</a>
+	                    </div>
+	                </div>
+	                <div class="col-lg-4 px-1 pl-lg-0 pb-5 pb-lg-4 about-img">
+	                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="images/me.png" alt="">
+	                </div>
+	            </div>
+	        </div>
 		</section>
-		<!-- gallery section -->
-		<section id="gallery" class="text-center bg-danger p-3 mb-4">
-			<div class="row">
-				<div class="col-md-6 p-4 mx-auto">
-					<div class="card h-100">
-						<div class="card-header bg-dark text-white">
-							<h2>Languages I Speak</h2>
-						</div>				
-						<!-- ul: unordered list -->
-						<ul>
-							<!-- li: list item -->
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JAVASCRIPT</li>
-							<li>VB.NET</li>
-							<li>C#.NET</li>
-							<li>ASP.NET</li>
-							<li>ASP.NET MVC</li>
-							<li>ASP.NET CORE</li>
-						</ul>
-					</div>
+		<!-- About Start -->
+		<section class="container-fluid py-2" id="about">
+			 <div class="container">
+	            <!-- <div class="d-flex align-items-center justify-content-center">
+	            	<h2 id="horizotal-line" class="text-uppercase text-info"><span>About Me</span></h2>
+	            </div> -->
+	            <div class="horizontal-box">
+					<h2 class="text-uppercase text-info horizotal-line-text">About Me</h2>
+					<hr class="horizotal-line" />
 				</div>
-				<div class="col-md-6 p-4 mx-auto devtool">
-					<div class="card h-100">
-						<div class="card-header bg-dark text-white">
-							<h2>Dev Tools</h2>
-						</div>			
-						<ul>
-							<li>Terminal/Git Bash</li>
-							<li>Sublime Text</li>
-							<li>GitHub</li>
-							<li>Visual Studio Code</li>
-							<li>Microsoft Visual Studio</li>
-						</ul>
-					</div>	
-				</div>
-			</div>				
+	            <div class="row justify-content-center align-items-center">
+	                <div class="col-lg-10">
+	                    <h3 class="mt-5 mb-4 text-center">Web Designer & Desktop Application Developer</h3>
+	                    <div class="row mb-3">
+	                        <div class="col-sm-6 py-1"><h6>Name: <span class="text-secondary">Crisjun Lamoste</span></h6></div>
+	                        <div class="col-sm-6 py-1"><h6>Birthday: <span class="text-secondary">June 19, 1992</span></h6></div>
+	                        <div class="col-sm-6 py-1"><h6>Degree: <span class="text-secondary">Bachelor Science in Information Technology</span></h6></div>
+	                        <div class="col-sm-6 py-1"><h6>Address: <span class="text-secondary">Brgy. 186 PMS Bldg. Barracks Tala Caloocan City</span></h6></div>
+	                        <div class="col-sm-6 py-1"><h6>Phone: <span class="text-secondary">091 554 70673</span></h6></div>
+	                        <div class="col-sm-6 py-1"><h6>Email: <span class="text-secondary">crisjunlamoste16@gmail.com</span></h6></div>                      
+	                        <div class="col-sm-6 py-1"><h6>Freelance: <span class="text-secondary">Open To Work</span></h6></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
 		</section>
+
+		<!-- Skill Start -->
+		<section class="container-fluid py-2" id="skills">
+			<div class="container">
+	            <!-- <div class="d-flex align-items-center justify-content-center">
+	                <h2 id="horizotal-line" class="text-uppercase text-info"><span>My Skills</span></h2>
+	            </div> -->
+	            <div class="horizontal-box">
+					<h2 class="text-uppercase text-info horizotal-line-text">My Skills</h2>
+					<hr class="horizotal-line" />
+				</div>
+	            <div class="row">
+	            	<div class="col-md-12">
+	            		<div class="slider_area owl-carousel">
+	            			<div class="box-area ml-3 mr-3 rounded">
+	            				<h4 class="box-area-title">Language I Speak</h4>	 
+			            		<div class="row text-dark">
+			            			<div class="col-md-4 mx-auto about-img">
+			            			    <img class="img-fluid rounded-circle mb-0 shadow-sm" src="images/languages.jpg" alt="" style="">
+					                </div>   
+			            			<div class="col-lg-6 mx-auto list-skill">			            				
+			            				<ul>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>JAVASCRIPT</li>
+											<li>VB.NET</li>
+											<li>C#.NET</li>
+											<li>ASP.NET</li>
+											<li>ASP.NET MVC</li>
+											<li>ASP.NET CORE</li>
+										</ul>
+			            			</div>	
+			            		</div>		    	  				            		           		          		
+					        </div>	            		
+	            			<div class="box-area ml-3 mr-3 rounded">
+	            				<h4 class="box-area-title">Dev Tools</h4>
+			    	  			<div class="row text-dark">				    	  						            					       
+			            			<div class="col-md-4 mx-auto about-img">          				
+					                    <img class="img-fluid rounded-circle mb-0 shadow-sm" src="images/devtool.png" alt="">
+					                </div>
+			            			<div class="col-lg-6 mx-auto list-skill">
+			            				<ul>
+											<li>Terminal/Git Bash</li>
+											<li>Sublime Text</li>
+											<li>GitHub</li>
+											<li>Visual Studio Code</li>
+											<li>Microsoft Visual Studio</li>
+										</ul>
+			            			</div>					            								            						            
+					            </div>					         
+	            			</div>
+	            			<div class="box-area ml-3 mr-3 rounded">	           
+			            		<h4 class="box-area-title">Database Tools</h4>	
+			            		<div class="row text-dark">
+			            			<div class="col-md-4 mx-auto about-img">
+					                    <img class="img-fluid rounded-circle shadow-sm" src="images/databasetool.png" alt="">
+					                </div>
+			            			<div class="col-lg-6 mx-auto list-skill">
+			            				<ul>
+											<li>Microsoft SQL</li>
+											<li>MySQL</li>
+											<li>Postgres</li>
+											<li>Oracle</li>
+										</ul>
+			            			</div>					            														
+			            		</div>	            							                
+	            			</div>	   
+	            			<div class="box-area ml-3 mr-3 rounded">
+			            		<h4 class="box-area-title">Others</h4>
+			            		<div class="row text-dark">
+			            			<div class="col-md-4 mx-auto about-img">
+					                    <img class="img-fluid rounded-circle shadow-sm" src="images/others.png" alt="">
+					                </div>
+			            			<div class="col-lg-6 mx-auto list-skill">
+			            				<ul>
+											<li>Entity Framework</li>
+											<li>Windows Communication Foundation</li>
+											<li>LINQ</li>
+											<li>Lambda</li>
+											<li>Microsoft Office</li>
+											<li>Adobe Photoshop</li>
+										</ul>
+			            			</div>				            													
+			            		</div>						               									
+	            			</div>         		
+	            			<!-- <div class="box-area ml-3 mr-3">
+	 							<div class="card border-0 text-dark rounded">
+					            	<div class="card-body">
+					            		<h5 class="card-title"><strong>Others</strong></h5>
+					            		<div class="row d-flex justify-content-between">
+					            			<div class="col-md-4 mx-auto about-img">
+							                    <img class="img-fluid rounded-circle shadow-sm" src="images/others.png" alt="">
+							                </div>
+					            			<div class="col-lg-7 rounded mt-4 font-weight-bold list-skill">
+					            				<ul>
+													<li>Entity Framework</li>
+													<li>Windows Communication Foundation</li>
+													<li>LINQ</li>
+													<li>Lambda</li>
+													<li>Microsoft Office</li>
+													<li>Adobe Photoshop</li>
+												</ul>
+					            			</div>				            													
+					            		</div>						               									
+					            	</div>	           		
+					            </div>
+	            			</div> -->
+	            		</div>
+	            	</div>
+	            </div>
+	        </div>
+		</section>
+		<!-- Qualification Section -->
+	    <section class="container-fluid py-2" id="qualification">
+	        <div class="container">
+	            <!-- <div class="position-relative d-flex align-items-center justify-content-center"> -->
+	                <!-- <h2 id="horizotal-line" class="text-uppercase text-info"><span>Education & Experience</span></h2> -->	                
+	            <!-- </div> -->
+	            <div class="horizontal-box">
+					<h2 class="text-uppercase text-info horizotal-line-text">Education & Experience</h2>
+					<hr class="horizotal-line" />
+				</div>
+	            <div class="row m-5">
+	                <div class="col-lg-6">
+	                    <h3 class="mb-4">My Education</h3>
+	                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+	                        <div class="position-relative ex-me mb-4">
+	                            <i class="fa fa-dot-circle-o text-primary position-absolute dot"></i>
+	                            <h5 class="font-weight-bold mb-1">Tertiary</h5>
+	                            <p class="mb-2"><strong>Best Link Collage of the Philippines</strong> | <small>2013 - 2017</small></p>
+	                        </div>
+	                        <div class="position-relative ex-me mb-4">
+	                            <i class="fa fa-dot-circle-o text-primary position-absolute dot"></i>
+	                            <h5 class="font-weight-bold mb-1">Secondary</h5>
+	                            <p class="mb-2"><strong>NHC High School</strong> | <small>2006 - 2009</small></p>
+	                        </div>
+	                        <div class="position-relative ex-me mb-4">
+	                            <i class="fa fa-dot-circle-o text-primary position-absolute dot"></i>
+	                            <h5 class="font-weight-bold mb-1">Primary</h5>
+	                            <p class="mb-2"><strong>Benabaye Elementary School</strong> | <small>2000-2003</small></p>	   
+	                            <p class="mb-2"><strong>NHC Elementary School</strong> | <small>2003-2006</small></p>	                         
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-lg-6">
+	                    <h3 class="mb-4">My Expericence</h3>
+	                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+	                        <div class="position-relative ex-me mb-4">
+	                            <i class="fa fa-dot-circle-o text-primary position-absolute dot"></i>
+	                            <h5 class="font-weight-bold mb-1">Freelance Programmer</h5>
+	                            <p class="mb-2"><strong>Self-Employeed</strong> | <small>2020-present</small></p>
+	                        </div>
+	                        <div class="position-relative ex-me mb-4">
+	                            <i class="fa fa-dot-circle-o text-primary position-absolute dot"></i>
+	                            <h5 class="font-weight-bold mb-1">Data Entry - Office Staff</h5>
+	                            <p class="mb-2"><strong>Geotechnic Philippine Inc.</strong> | <small>2018-2020</small></p>
+	                        </div>
+	                        <div class="position-relative ex-me mb-4">
+	                            <i class="fa fa-dot-circle-o text-primary position-absolute dot"></i>
+	                            <h5 class="font-weight-bold mb-1">Internship</h5>
+	                            <p class="mb-2"><strong>Quezon City Hall</strong> | <small>2016</small></p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+	    <!-- Additional Text -->
+	    <section class="bg-secondary text-light" id="text">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<h5>Do you have any project?</h5>
+	    				<h1 class="text-center">I'm Available for Freelance Project or Open for a Company Job</h1>
+	    				<a class="btn btn-outline-light border-light" href="#contact">Hire Me</a>
+	    			</div>
+	    		</div>	    		    		
+	    	</div>
+	    </section>
+
+	    <!-- Services Section -->
+	    <section class="container-fluid py-2" id="service">
+	        <div class="container">
+	            <!-- <div class="service-h4"> -->
+	                <!-- <h2 id="horizotal-line" class="text-uppercase text-info"><span>What I Do</span></h2> -->	                
+	            <!-- </div> -->
+	            <div class="horizontal-box">
+					<h2 class="text-uppercase text-info horizotal-line-text">What I Do</h2>
+					<hr class="horizotal-line" />
+				</div>
+	            <div class="row pb-3 mt-5 justify-content-center">
+	                <div class="col-md-5 text-center mb-5 service-box">                     	    
+	                    <div class="d-flex align-items-center justify-content-center mb-4">        
+	                    	<i class="fa fa-laptop fa-5x service-icon bg-primary text-white mr-3 mt-4"></i>                       	
+	                        <h4 class="font-weight-bold m-0">Web Designer & Desktop Application Developer</h4>
+	                    </div>
+	                    <p>Creating awesome front-end web design for my customer satisfaction. Also creating desktop application with front-end and back-end.</p>
+	                </div>
+	                <div class="col-md-5 text-center mb-5 service-box">                     	    
+	                    <div class="d-flex align-items-center justify-content-center mb-4">        
+	                    	<i class="fa fa-photo fa-5x service-icon bg-primary text-white mr-3 mt-4"></i>                       	
+	                        <h4 class="font-weight-bold m-0">Photo Editing</h4>
+	                    </div>
+	                    <p>Editing image or custom logo.</p>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+	    <!-- Contact Section -->
+	    <section class="container-fluid py-2" id="contact">
+	        <div class="container">
+	            <div class="horizontal-box">
+					<h2 class="text-uppercase text-info horizotal-line-text">Contact Me</h2>
+					<hr class="horizotal-line" />
+				</div>
+	            <div class="row" id="contactMe">
+	            	<div class="col-md-5">
+	            		<div class="contact-item d-flex">
+	            			<div class="icon text-secondary">
+	            				<i class="fa fa-envelope fa-2x"></i>
+	            			</div>
+	            			<div class="text ms-3 ml-3">
+		            			<h4 class="fs-5">Email</h4>
+		            			<p class="text-muted">crisjunlamoste16@gmail.com</p>
+		            		</div>       			
+	            		</div>
+	            		<div class="contact-item d-flex">
+	            			<div class="icon text-secondary">
+	            				<i class="fa fa-phone fa-2x"></i>
+	            			</div>
+	            			<div class="text ms-3 ml-3">
+		            			<h4 class="fs-5">Phone</h4>
+		            			<p class="text-muted">+6391 5547 0***</p>
+		            		</div>       			
+	            		</div>
+	            	</div>
+	                <div class="col-lg-7 shadow-sm py-5 bg-secondary rounded">
+	                    <div class="contact-form">
+	                        <div id="success"></div>
+	                        <form name="sentMessage" id="contactForm" action="sendmail.php" method="post">
+	                            <div class="row">
+	                                <div class="col-sm-6 mb-4">
+	                                    <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm" id="name" placeholder="Your Name"
+	                                        required="required" data-validation-required-message="Please enter your name" />
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                                <div class="col-sm-6 mb-4">
+	                                    <input type="email" class="form-control form-control-lg fs-6 border-0 shadow-sm" id="email" placeholder="Your Email"
+	                                        required="required" data-validation-required-message="Please enter your email" />
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                            </div>
+	                            <div class="row">
+	                            	<div class="col-lg-12 mb-4">
+	                            		<input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm" id="subject" placeholder="Subject"
+		                                    required="required" data-validation-required-message="Please enter a subject" />
+		                                <p class="help-block text-danger"></p>
+	                            	</div>                               
+	                            </div>
+	                            <div class="row">
+	                            	<div class="col-lg-12 mb-4">
+	                            		<textarea class="form-control form-control-lg fs-6 border-0 shadow-sm" rows="5" id="message" placeholder="Message"
+		                                    required="required"
+		                                    data-validation-required-message="Please enter your message"></textarea>
+		                                <p class="help-block text-danger"></p>
+	                            	</div>	                                
+	                            </div>
+	                            <div class="row">
+	                            	<div class="col-lg-12">
+	                            		<button class="btn btn-outline-light border-light" type="submit" id="sendMessageButton">Send Message</button>
+	                            	</div>	                                
+	                            </div>
+	                        </form>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
 	</div>
+	 
+
 	<!-- Footer -->
-	<footer id="footer" class="text-center text-lg-start bg-dark text-white">
-        <p class="copyright mt-3">
+	<footer id="footer" class="container-fluid text-center bg-dark text-white mt-5 py-1 px-sm-1 px-md-5">
+        <p class="copyright py-2 text-muted">
             &copy; Copyright
                 <script type="text/javascript">document.write(new Date().getFullYear());</script>
             <br> Crisjun Lamoste - Full Stack Web Developer
         </p>
     </footer>
-	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+ 	<!-- Personal Script -->
+ 	<script src="script.js" type="text/javascript"></script>
 </body>
 </html>

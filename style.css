@@ -1,102 +1,303 @@
-/*css selector*/
 * {
 	font-family: "Roboto", sans-serif;
 }
 html{
 	scroll-behavior: smooth;
 }
-h1, h2 {
-	font-family: "Montserrat", sans-serif;
+/* ================ Navigation Menu ====================*/
+#btndownloadcv {
+	background-color:#457efa;
+	color: #ffffff;
 }
-#_navbar{
-	opacity: 0.8;
-}
-.container-fluid {
-	margin-top: 60px;
-}
-
 .nav-item::after {
      content: '';
      display: block;
      width: 0px;
      height: 2px;
-     background: #fec400;
+     background: #F57F17;
      transition: 0.4s
  }
-
 .nav-item:hover::after {
      width: 100%
 }
 .nav-item:hover::after {
      width: 100%
- }
-
- .navbar-dark .navbar-nav .active>.nav-link,
- .navbar-dark .navbar-nav .nav-link.active,
- .navbar-dark .navbar-nav .nav-link.show,
- .navbar-dark .navbar-nav .show>.nav-link,
- .navbar-dark .navbar-nav .nav-link:focus,
- .navbar-dark .navbar-nav .nav-link:hover {
-     color: #fec400
- }
-
- .nav-link {
+}
+.nav-link {
      transition: 0.2s
  }
-
-#profile {
-	height: 250px;
-	width: 250px;
-	background-color: skyblue;
-	border-radius: 50%;
+.nav-item .nav-link {
+	background: red;
+}
+.navbar-light {
+	/*display: none;*/
+}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+     color: #F57F17;
+}
+/* ANIMATED X */
+.navbar-toggler span {
+    display: block;
+    background-color: #616161;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
 }
 
+#toggleButton {border: none;}
+
+/* top line needs a little padding */
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+/**
+ * Animate collapse into X.
+ */
+
+/* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+/* center line goes transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg) ;
+}
+/* END ANIMATED X */
+
+/*===================== Landing section ======================*/
+.jumbotron {background-color: transparent;}
+.jumbotron h3,
+.jumbotron h1 {
+	font-size:4vh;
+}
 #landing {
-	/*viewport height - measured percentage of the height of the device you are viewing you webapage*/
-	height: 80vh;
-	/*arrange elements inside the parent element, will allow us to layout our element inside our landing section*/
-	display: flex;
-	/*directs the elements inside display: flex*/
-	flex-direction: column;
-	/*centering elements horizontally if flex direction is in column*/
-	align-items: center;
-	/*centering elements vertically if flex direction is in*/
-	justify-content: center;
+	min-height: 100vh;
+	display: block;
+	box-sizing: border-box;
+	height: 500px;
+	background-color: #dc3d4b;
+	clip-path: ellipse(99% 100% at 60% 0%);
 }
 
-.jumbotron {
-	background-color: transparent;
+#landing .img-fluid {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	background-color: #EEEEEE;
 }
 
-#gallery {
-	border-radius: 50px 0 50px 0;
-	opacity: 0.8;
+.btn {border: 2px solid rgb(29, 105, 247);}
+
+/*===================== Skills section ======================*/
+.box-area {
+	padding: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
+}
+.box-area:hover {
+    box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
+}
+.box-area .box-area-title {
+	text-align: center;
+	font-weight: bold;
 }
 
-#footer{
+#skills .owl-nav {
 	position: absolute;
-	background-color: transparent;
-	justify-content: center;
+	top: 50%;
 	width: 100%;
 }
+
+#skills .owl-prev,
+#skills .owl-next {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	background: #1976D2;
+	position: absolute;
+}
+#skills .owl-prev:hover,
+#skills .owl-next:hover{
+	background: #42A5F5;
+}
+#skills .owl-prev {
+	left: -5px;
+	top: -30px;
+}
+#skills .owl-next {
+	right: -5px;
+	top: -30px;
+}
+
+#skills .list-skill {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	font-weight: bold;
+	font-style: italic;
+	overflow: hidden;
+}
+
+.box-area .about-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*===================== Qualification section ======================*/
+
+#qualification .dot {
+	top: 2px; 
+  	left: -35px; 
+  	font-size: 22px;
+  	background-color: white;
+}
+#qualification .ex-me{margin-top: 35px;}
+
+/*===================== Services section ======================*/
+
+#service i {
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#service .service-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30%;
+}
+
+#service .service-box{
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
+  padding: 15px;
+  margin: 0 15px 0 15px;
+}
+#service .service-box:hover{
+  box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
+}
+
+/* ================ Additional Text ====================*/
+
+#text {
+	height: 50vh;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* ================ Contact Section ====================*/
+#contact #contactMe{
+	margin-top: 50px;
+}
+
+#contactMe {
+	align-items: center;
+}
+
+#sendMessageButton {
+	float: right;
+}
+/*===========================================*/
+/*#horizotal-line {
+	width: 100%;
+	text-align: center;	
+	line-height: 0.2em;
+    height: 5px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+#horizotal-line span { 
+    background:#fff; 
+    padding: 0 10px 0 10px;
+    font-size: 2rem;
+}*/
+
+.horizontal-box {
+  	background: #fff;
+  	display: flex;
+  	justify-content: center;
+}
+
+.horizontal-box .horizotal-line {
+    width: 100%;
+	line-height: 0.2em;
+    height: 5px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.horizontal-box .horizotal-line-text {
+  	background: #fff;
+  	color: white;
+  	padding: 0 20px 0 20px;
+  	position: absolute;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
 }
-
-@media only screen and (max-width: 576px){
-	#landing {
-		height: 90vh;
+/*Screen View*/
+/* ================ Navigation Menu ====================*/
+@media (max-width:  991px) {
+	 .navbar-light .navbar-nav .nav-link {
+	 	padding: 10px 0;
+	 }	 
+}
+/* ================ Landing Section ====================*/
+@media (max-width: 991px) {
+     .about-img{
+	    margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	    width: 50%;
+	 }
+	 .btn-contact {
+	 	display: flex;
+	 	align-items: center;
+	 	justify-content: center;
+	 }
+}
+/*===================== Skills section ======================*/
+@media (max-width: 991px) { 
+	.box-area .about-img {
+		margin-top: 10px;
 	}
-	#gallery { 
-		display: flex;
-		flex-direction: column;
-		padding: 10px;
+	#skills .list-skill {
+		text-align: center;
 	}
 }
 
-@media only screen and (max-width: 389px){
-	#landing {
-		height: 110vh;
+/*===========================================*/
+
+@media (max-width:  991px) { 
+	.horizontal-box .horizotal-line-text { 
+		font-size: 1.3rem;
+		margin-top: 1vh;
 	}
+	#text h1 {font-size: 1.5rem;}
 }
+
