@@ -56,5 +56,9 @@ $('.slider_area').owlCarousel({
 });
 
 
+$(document).ready(function(){
+
+});
+
 
 
