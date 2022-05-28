@@ -220,6 +220,10 @@ html{
 #sendMessageButton {
 	float: right;
 }
+
+#honey {
+	display: none;
+}
 /*===========================================*/
 /*#horizotal-line {
 	width: 100%;
