@@ -328,7 +328,7 @@
 	                        <!-- <form name="sentMessage" id="contactForm" onsubmit="sendEmail(); reset(); return false;"> -->
 	                         <form name="sentMessage" id="contactForm" action="https://formsubmit.co/crisjunlamoste16@gmail.com" method="post">
 	                         	<input type="hidden" name="_captcha" value="false">
-	                         	<input type="text" id="honey" name="_honey">
+	                         	<input type="hidden" name="_template" value="basic">
 	                            <div class="row">
 	                                <div class="col-sm-6 mb-4">
 	                                    <input type="text" name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Enter Name"
@@ -351,7 +351,7 @@
 	                            </div>
 	                            <div class="row">
 	                            	<div class="col-lg-12 mb-4">
-	                            		<textarea class="form-control form-control-lg fs-6 border-0 shadow-sm" rows="5" placeholder="Message"
+	                            		<textarea name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm" rows="5" placeholder="Message"
 		                                    required="required"
 		                                    data-validation-required-message="Please enter your message"></textarea>
 		                                <p class="help-block text-danger"></p>
