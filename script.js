@@ -33,7 +33,6 @@ jQuery( document ).ready(function() {
     carouselNormalization();
 });
 
-
 $('.slider_area').owlCarousel({
 	autoplay:false,
 	slideSpeed:3000,
