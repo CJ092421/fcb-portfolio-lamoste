@@ -306,30 +306,30 @@
 	                <div class="col-lg-7 shadow-sm py-5 bg-secondary rounded">
 	                    <div class="contact-form">
 	                        <p id="contactForm-status"></p>
+	                        <div class="alert alert-success" role="alert"><p id="contactForm-status"></p></div>
 	                        <form name="sentMessage" id="contactForm" novalidate action="https://formspree.io/f/mrgjjyaz" method="post">
-    							<input type="text" name="_gotcha" style="display:none" />
 	                            <div class="row">
 	                                <div class="col-sm-6 mb-4">
-	                                    <input id="email" type="email" name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Enter Email"
+	                                    <input type="text" name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Enter Email"
 	                                        required="required" data-validation-required-message="Please enter your email" />
 	                                    <p class="help-block text-danger"></p>
 	                                </div>
 	                                <div class="col-sm-6 mb-4">
-	                                    <input id="email" type="email" name="email" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Enter Email"
+	                                    <input type="email" name="email" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Enter Email"
 	                                        required="required" data-validation-required-message="Please enter your email" />
 	                                    <p class="help-block text-danger"></p>
 	                                </div>
 	                            </div>
 	                            <div class="row">
 	                            	<div class="col-lg-12 mb-4">
-	                            		<input id="subject" type="text" name="_subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Subject"
+	                            		<input type="text" name="_subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Subject"
 		                                    required="required" data-validation-required-message="Please enter a subject" />
 		                                <p class="help-block text-danger"></p>
 	                            	</div>                                
 	                            </div>
 	                            <div class="row">
 	                            	<div class="col-lg-12 mb-4">
-	                            		<textarea id="message" name="message" class="form-control form-control-lg fs-6 border-0 shadow-sm" rows="5" placeholder="Message"
+	                            		<textarea name="message" class="form-control form-control-lg fs-6 border-0 shadow-sm" rows="5" placeholder="Message"
 		                                    required="required"
 		                                    data-validation-required-message="Please enter your message"></textarea>
 		                                <p class="help-block text-danger"></p>
