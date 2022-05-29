@@ -305,36 +305,35 @@
 	            	</div>
 	                <div class="col-lg-7 shadow-sm py-5 bg-secondary rounded">
 	                	<div class="alert alert-success alert-dismissible fade show" id="contactForm-status" role="alert">
-                        	 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 							    <span aria-hidden="true">&times;</span>
-							  </button>
+							</button>
                         </div>
 	                    <div class="contact-form">                        
-	                        <form name="sentMessage" id="contactForm" novalidate action="https://formspree.io/f/mrgjjyaz" method="post">
+	                        <form name="sentMessage" id="contactForm" action="https://formspree.io/f/mrgjjyaz" method="post">
 	                            <div class="row">
 	                                <div class="col-sm-6 mb-4">
 	                                    <input type="text" name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Your Name"
-	                                        required="required" data-validation-required-message="Please enter your email" />
+	                                        required data-validation-required-message="Please enter your email" />
 	                                    <p class="help-block text-danger"></p>
 	                                </div>
 	                                <div class="col-sm-6 mb-4">
 	                                    <input type="email" name="email" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Your Email"
-	                                        required="required" data-validation-required-message="Please enter your email" />
+	                                        required data-validation-required-message="Please enter your email" />
 	                                    <p class="help-block text-danger"></p>
 	                                </div>
 	                            </div>
 	                            <div class="row">
 	                            	<div class="col-lg-12 mb-4">
 	                            		<input type="text" name="_subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Subject"
-		                                    required="required" data-validation-required-message="Please enter a subject" />
+		                                    required data-validation-required-message="Please enter a subject" />
 		                                <p class="help-block text-danger"></p>
 	                            	</div>                                
 	                            </div>
 	                            <div class="row">
 	                            	<div class="col-lg-12 mb-4">
 	                            		<textarea name="message" class="form-control form-control-lg fs-6 border-0 shadow-sm" rows="5" placeholder="Your Message Here..."
-		                                    required="required"
-		                                    data-validation-required-message="Please enter your message"></textarea>
+		                                    required data-validation-required-message="Please enter your message"></textarea>
 		                                <p class="help-block text-danger"></p>
 	                            	</div>	                                
 	                            </div>

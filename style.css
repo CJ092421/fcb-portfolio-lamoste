@@ -220,7 +220,7 @@ html{
 #sendMessageButton {
 	float: right;
 }
-.alert-success {
+#contactForm-status {
 	display: none;
 }
 /*====================== Back to buttom ==================*/
