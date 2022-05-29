@@ -91,7 +91,7 @@ async function handleSubmit(event) {
   }).then(response => {
     if (response.ok) {
       status.innerHTML = "Thanks for your submission!";
-      $('#successAlert').slideDown();
+      $('#contactForm-status').fadeIn();
       form.reset()
     } else {
       response.json().then(data => {
