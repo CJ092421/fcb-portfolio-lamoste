@@ -76,11 +76,10 @@ function topFunction() {
 
 
 // Send Message
-
 var form = document.getElementById("contactForm");    
 async function handleSubmit(event) {
   event.preventDefault();
-  var status = document.getElementById("contactForm-status");
+  var status = document.getElementById("contact-status");
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -107,3 +106,12 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+
+$(document).ready(function () {
+    $("#nav_hover").click(function () {
+        setTimeout(function () {
+            $("#nav_features #nav_expanded_nav.expanded_nav").css("top", "95px");
+        }, 20);
+    });
+});
