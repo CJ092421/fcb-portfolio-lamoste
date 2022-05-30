@@ -222,10 +222,38 @@ html{
 /* ===================== Footer Section ====================*/
 
 #footer {
-	height: 20vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	min-height: 25vh;
+}
+
+.social {
+	margin-top: 20px;
+	display: inline-flex;
+}
+
+#footer ul.social li,
+#footer ul.jst-link li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#footer ul.social li a {
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+  background-color: #9E9E9E;
+}
+
+#footer ul.social li a span.fa {
+  line-height: 36px;
+}
+
+#footer ul.social li a:hover {
+  color: #C62828;
+  transition: 0.3s ease;
 }
 
 /* =================== Google Map Section =================*/
@@ -306,13 +334,19 @@ ul {
 	 	align-items: center;
 	 	justify-content: center;
 	 }
-	 /*===================== Skills section ======================*/
+	
 	.box-area .about-img {
 		margin-top: 10px;
 	}
 	#skills .list-skill {
 		text-align: center;
 	}
+
+	/*===================== Contact section ======================*/
+	#contactMe h1 {
+		font-size: 1.5rem;
+	}
+
 	/*===========================================*/
 	.horizontal-box .horizotal-line-text { 
 		font-size: 1.3rem;
