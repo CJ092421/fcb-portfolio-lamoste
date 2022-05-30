@@ -75,7 +75,7 @@ function topFunction() {
 }
 
 
-// Send Message
+// Send Message to email
 var form = document.getElementById("contactForm");    
 async function handleSubmit(event) {
   event.preventDefault();
@@ -108,10 +108,21 @@ async function handleSubmit(event) {
 form.addEventListener("submit", handleSubmit)
 
 
-$(document).ready(function () {
-    $("#nav_hover").click(function () {
-        setTimeout(function () {
-            $("#nav_features #nav_expanded_nav.expanded_nav").css("top", "95px");
-        }, 20);
-    });
-});
+// Hide navbar when click menu
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarCollapse')
+
+const bsCollapse = new bootstrap.Collapse(menuToggle, {
+  toggle: false
+})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => {   
+            bsCollapse.hide()    
+    })
+})
+
+// Nav bar focus active change
+$('.navbar-nav .nav-link').click(function(){
+    $('.navbar-nav .nav-link').removeClass('active');
+    $(this).addClass('active');
+})

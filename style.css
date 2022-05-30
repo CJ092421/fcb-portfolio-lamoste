@@ -20,18 +20,9 @@ html{
 .nav-item:hover::after {
      width: 100%
 }
-.nav-item:hover::after {
-     width: 100%
-}
 .nav-link {
      transition: 0.2s
  }
-.nav-item .nav-link {
-	background: red;
-}
-.navbar-light {
-	/*display: none;*/
-}
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
@@ -40,7 +31,8 @@ html{
 .navbar-light .navbar-nav .nav-link:hover {
      color: #F57F17;
 }
-/* ANIMATED X */
+
+ /* ANIMATED X */
 .navbar-toggler span {
     display: block;
     background-color: #616161;
@@ -89,7 +81,6 @@ html{
 	min-height: 100vh;
 	display: block;
 	box-sizing: border-box;
-	height: 500px;
 	background-color: #dc3d4b;
 	clip-path: ellipse(99% 100% at 60% 0%);
 }
@@ -100,6 +91,7 @@ html{
 	margin-right: auto;
 	width: 50%;
 	background-color: #EEEEEE;
+	position: relative;
 }
 
 .btn {border: 2px solid rgb(29, 105, 247);}
@@ -222,6 +214,28 @@ html{
 }
 #contactForm-status {
 	display: none;
+	width: 100%;
+	position: fixed;
+	margin-top: 50px;
+	z-index: 20;
+}
+/* ===================== Footer Section ====================*/
+
+#footer {
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* =================== Google Map Section =================*/
+#googlemap {
+	margin: 50px 0 0 0;
+} 
+
+#googlemap iframe {
+	border:0; 
+	width: 100%; 
 }
 /*====================== Back to buttom ==================*/
 
@@ -249,20 +263,6 @@ html{
 /*====================== Thank You ==================*/
 
 /*===========================================*/
-/*#horizotal-line {
-	width: 100%;
-	text-align: center;	
-	line-height: 0.2em;
-    height: 5px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
-#horizotal-line span { 
-    background:#fff; 
-    padding: 0 10px 0 10px;
-    font-size: 2rem;
-}*/
-
 .horizontal-box {
   	background: #fff;
   	display: flex;
@@ -289,15 +289,13 @@ ul {
 	padding: 0;
 }
 /*Screen View*/
-/* ================ Navigation Menu ====================*/
 @media (max-width:  991px) {
+	/* ================ Navigation Menu ====================*/
 	 .navbar-light .navbar-nav .nav-link {
 	 	padding: 10px 0;
 	 }	 
-}
-/* ================ Landing Section ====================*/
-@media (max-width: 991px) {
-     .about-img{
+	 /* ================ Landing Section ====================*/
+	 .about-img{
 	    margin-left: auto;
 		margin-right: auto;
 		margin-top: 30px;
@@ -308,24 +306,21 @@ ul {
 	 	align-items: center;
 	 	justify-content: center;
 	 }
-}
-/*===================== Skills section ======================*/
-@media (max-width: 991px) { 
+	 /*===================== Skills section ======================*/
 	.box-area .about-img {
 		margin-top: 10px;
 	}
 	#skills .list-skill {
 		text-align: center;
 	}
-}
-
-/*===========================================*/
-
-@media (max-width:  991px) { 
+	/*===========================================*/
 	.horizontal-box .horizotal-line-text { 
 		font-size: 1.3rem;
 		margin-top: 1vh;
 	}
 	#text h1 {font-size: 1.5rem;}
 }
+
+
+
 

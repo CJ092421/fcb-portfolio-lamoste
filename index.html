@@ -4,7 +4,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Crisjun Lamoste | Web Developer Portfolio</title>
+	<title>Crisjun Lamoste | Portfolio</title>
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,28 +20,37 @@
 </head>
 <body>
 	<!-- Navbar Start -->
-	<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light">
-		<a href="#landing" class="navbar-brand ml-lg-3">
-			<h4 class="m-0 display-5"><span class="text-info"><i>C.</i></span><span class="text-secondary">JFolio</span></h4>
-		</a>
-		<button id="toggleButton" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span> </span>
-			<span> </span>
-			<span> </span>
-	    </button>	   
-		<div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-			<hr>
-			<div class="navbar-nav py-0">
-                <a href="#landing" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skills" class="nav-item nav-link">Skill</a>
-                <a href="#qualification" class="nav-item nav-link">Qualification</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-                <a href="resume/CRISJUNRESUME-2022.pdf" class="btn btn-menu d-lg-block" id="btndownloadcv" download="download">Download CV</a>               
-            </div>
-		</div>
-	</nav>
+	<div class="header">
+		<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light">
+			<a href="#landing" class="navbar-brand ml-lg-3">
+				<h4 class="m-0 display-5"><span class="text-info"><i>C.</i></span><span class="text-secondary">JFolio</span></h4>
+			</a>
+			<button id="toggleButton" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span> </span>
+				<span> </span>
+				<span> </span>
+		    </button>	   
+			<div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+				<hr>
+				<div class="navbar-nav py-0" id="_navbar">
+	                <a href="#landing" class="nav-item nav-link active">Home <span class="sr-only">(current)</span></a>
+	                <a href="#about" class="nav-item nav-link">About</a>
+	                <a href="#skills" class="nav-item nav-link">Skill</a>
+	                <a href="#qualification" class="nav-item nav-link">Qualification</a>
+	                <a href="#service" class="nav-item nav-link">Service</a>
+	                <a href="#contact" class="nav-item nav-link">Contact</a>
+	                <a href="resume/CRISJUNRESUME-2022.pdf" class="btn btn-menu d-lg-block" id="btndownloadcv" download="download">Download CV</a>               
+	            </div>
+			</div>		
+		</nav>
+		<div class="alert alert-success alert-dismissible fade show" id="contactForm-status" role="alert">
+			<span id="contact-status"></span>
+	    	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			</button>
+	    </div>
+	</div>
+	
 	<div class="wrapper">
 		<!-- Landing Start -->
 		<section class="container-fluid bg-secondary d-flex align-item-center mb-5 py-5" id="landing">
@@ -55,7 +64,7 @@
 	                        <a href="#contact" class="btn btn-outline-light border-light">Contact Me</a>
 	                    </div>
 	                </div>
-	                <div class="col-lg-4 px-1 pl-lg-0 pb-5 pb-lg-4 about-img">
+	                <div class="col-lg-4 px-1 pl-lg-0 about-img">
 	                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="images/me.png" alt="">
 	                </div>
 	            </div>
@@ -64,9 +73,6 @@
 		<!-- About Start -->
 		<section class="container-fluid py-2" id="about">
 			 <div class="container">
-	            <!-- <div class="d-flex align-items-center justify-content-center">
-	            	<h2 id="horizotal-line" class="text-uppercase text-info"><span>About Me</span></h2>
-	            </div> -->
 	            <div class="horizontal-box">
 					<h2 class="text-uppercase text-info horizotal-line-text">About Me</h2>
 					<hr class="horizotal-line" />
@@ -90,10 +96,7 @@
 
 		<!-- Skill Start -->
 		<section class="container-fluid py-2" id="skills">
-			<div class="container">
-	            <!-- <div class="d-flex align-items-center justify-content-center">
-	                <h2 id="horizotal-line" class="text-uppercase text-info"><span>My Skills</span></h2>
-	            </div> -->
+			<div class="container"> 
 	            <div class="horizontal-box">
 					<h2 class="text-uppercase text-info horizotal-line-text">My Skills</h2>
 					<hr class="horizotal-line" />
@@ -180,9 +183,6 @@
 		<!-- Qualification Section -->
 	    <section class="container-fluid py-2" id="qualification">
 	        <div class="container">
-	            <!-- <div class="position-relative d-flex align-items-center justify-content-center"> -->
-	                <!-- <h2 id="horizotal-line" class="text-uppercase text-info"><span>Education & Experience</span></h2> -->	                
-	            <!-- </div> -->
 	            <div class="horizontal-box">
 					<h2 class="text-uppercase text-info horizotal-line-text">Education & Experience</h2>
 					<hr class="horizotal-line" />
@@ -249,9 +249,6 @@
 	    <!-- Services Section -->
 	    <section class="container-fluid py-2" id="service">
 	        <div class="container">
-	            <!-- <div class="service-h4"> -->
-	                <!-- <h2 id="horizotal-line" class="text-uppercase text-info"><span>What I Do</span></h2> -->	                
-	            <!-- </div> -->
 	            <div class="horizontal-box">
 					<h2 class="text-uppercase text-info horizotal-line-text">What I Do</h2>
 					<hr class="horizotal-line" />
@@ -303,13 +300,7 @@
 		            		</div>       			
 	            		</div>
 	            	</div>
-	                <div class="col-lg-7 shadow-sm py-5 bg-secondary rounded">
-	                	<div class="alert alert-success alert-dismissible fade show" id="contactForm-status" role="alert">
-	                		<p id="contact-status">Thanks for your submission!</p>
-                        	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							    <span aria-hidden="true">&times;</span>
-							</button>
-                        </div>
+	                <div class="col-lg-7 shadow-sm py-5 bg-secondary rounded">	                	
 	                    <div class="contact-form">                        
 	                        <form name="sentMessage" id="contactForm" action="https://formspree.io/f/mrgjjyaz" method="post">
 	                            <div class="row">
@@ -348,17 +339,22 @@
 	                </div>
 	            </div>
 	        </div>
-	    </section>	       
-	</div>
+	    </section>	
 
+	    <!-- Google Map Section -->
+	    <section id="googlemap">
+	    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.007736304528!2d121.07075311454807!3d14.768594289695695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397affbf079ebaf%3A0x6140e36d1bdbb380!2sBarracks%20Rd%2C%20Barangay%20186%2C%20Caloocan%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1653897030109!5m2!1sen!2sph" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	       	
+	    </section>	  
+
+	</div>
 	<!-- Back to Top -->
    	<button class="btn btn-danger px-0 back-to-top" id="backtotop" onclick="topFunction()"><i class="fa fa-angle-double-up"></i></button>   	 
 	<!-- Footer -->
-	<footer id="footer" class="container-fluid text-center bg-dark text-white mt-5 py-1 px-sm-1 px-md-5">
-        <p class="copyright py-2 text-muted">
-            &copy; Copyright
-                <script type="text/javascript">document.write(new Date().getFullYear());</script>
-            <br> Crisjun Lamoste - Full Stack Web Developer
+	<footer id="footer" class="container-fluid text-center bg-dark text-light">
+        <p class="copyright text-muted">
+        	&copy; Copyright
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            <br> Crisjun Lamoste - Web & Desktop Developer
         </p>
     </footer>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
