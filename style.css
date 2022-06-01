@@ -329,7 +329,7 @@ ul {
 }
 /*Screen View*/
 @media (max-width:  991px) {
-	.jumbotron { margin-top: 20px;}
+	#landing { margin-top: 20px;}
 	/* ================ Navigation Menu ====================*/
 	.navbar-light .navbar-nav .nav-link {
 	 	padding: 10px 0;
