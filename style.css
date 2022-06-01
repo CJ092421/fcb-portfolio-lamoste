@@ -261,6 +261,7 @@ html{
 #googlemap {
 	margin: 50px 0 0 0;
 	background: #6C757D;
+	padding: 5px;
 } 
 
 #googlemap iframe {
@@ -270,6 +271,7 @@ html{
 /*====================== Back to buttom ==================*/
 
 .back-to-top {
+	display: none;
 	position: fixed;
 	border: none;
 	outline: none;
