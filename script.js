@@ -54,17 +54,19 @@ $('.slider_area').owlCarousel({
 	}
 });
 
-//Get the button
-var mybutton = document.getElementById("backtotop");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    document.getElementById("_navmenu").style.padding = "5px 10px";
+    document.getElementById("_logotext").style.fontSize = "30px";
+    document.getElementById("backtotop").style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    document.getElementById("_navmenu").style.padding = "15px 10px";
+    document.getElementById("_logotext").style.fontSize = "35px";
+    document.getElementById("backtotop").style.display = "none";
   }
 }
 
@@ -126,3 +128,17 @@ $('.navbar-nav .nav-link').click(function(){
     $('.navbar-nav .nav-link').removeClass('active');
     $(this).addClass('active');
 })
+
+
+// Set active nav link when scrolling down
+const li = document.querySelectorAll(".nav-link");
+const sec = document.querySelectorAll("section");
+
+function activeMenu() {
+  let len = sec.length;
+  while(--len && window.scrollY + 97 < sec[len].offsetTop) {}
+  li.forEach(li => li.classList.remove("active"));
+  li[len].classList.add("active");
+}
+activeMenu();
+window.addEventListener("scroll", activeMenu);

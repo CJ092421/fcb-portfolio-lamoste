@@ -1,10 +1,19 @@
 * {
 	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
 }
 html{
 	scroll-behavior: smooth;
 }
+
 /* ================ Navigation Menu ====================*/
+
+#_navmenu {
+	padding: 15px 10px;
+	transition: 0.4s;
+}
+#_logotext { font-size: 35px; }
+
 #btndownloadcv {
 	background-color:#457efa;
 	color: #ffffff;
