@@ -329,18 +329,19 @@ ul {
 }
 /*Screen View*/
 @media (max-width:  991px) {
+	.jumbotron { margin-top: 20px;}
 	/* ================ Navigation Menu ====================*/
-	 .navbar-light .navbar-nav .nav-link {
+	.navbar-light .navbar-nav .nav-link {
 	 	padding: 10px 0;
-	 }	 
+	}	 
 	 /* ================ Landing Section ====================*/
-	 .about-img{
+	.about-img{
 	    margin-left: auto;
 		margin-right: auto;
 		margin-top: 30px;
 	    width: 50%;
-	 }
-	 .btn-contact {
+	}
+	.btn-contact {
 	 	display: flex;
 	 	align-items: center;
 	 	justify-content: center;
